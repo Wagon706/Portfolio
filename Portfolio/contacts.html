@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts - Guido's World</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon_io/favicon-16x16.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="manifest" href="images/favicon_io/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+
+    body {
+      background-image: url("https://thumbs.gfycat.com/UnfitDrearyFossa-size_restricted.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+    a {
+      font-family: "Alkatra", cursive;
+    }
+
+    a:target {
+      transition: opacity 1s;
+      opacity: 0;
+    }
+    #h {
+      text-align: center;
+      margin-top: 50px;
+      font-family: "Alkatra", cursive;
+    }
+
+    #journey {
+      text-align: center;
+      font-family: "Alkatra", cursive;
+      font-weight: 600;
+      font-size: 25px;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0 0.5rem;
+
+      animation: tada; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s; /* don't forget to set a duration! */
+    }
+
+    #dsc {
+      margin-left: 15%;
+      margin-top: 20%;
+      animation: jackInTheBox; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s;
+      font-family: "Alkatra", cursive;
+    }
+    #contact {
+      text-align: center;
+      margin-top: 20px;
+      font-family: "Alkatra", cursive;
+      animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s; /* don't forget to set a duration! */
+      text-shadow: 0 0 10px #264653, 0 0 20px #264653, 0 0 30px #fff,
+        0 0 40px black, 0 0 70px black, 0 0 80px black, 0 0 100px black,
+        0 0 150px black;
+    }
+
+    #gh {
+      margin-left: 70%;
+      margin-top: -17%;
+      animation: jackInTheBox; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s;
+      font-family: "Alkatra", cursive;
+    }
+    /* For screens smaller than 576px */
+    @media (max-width: 575.98px) {
+      #dsc {
+        margin-left: 0;
+        margin-top: 10%;
+      }
+
+      #gh {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+
+    /* For screens between 576px and 768px */
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      #dsc {
+        margin-left: 10%;
+        margin-top: 20%;
+      }
+
+      #gh {
+        margin-left: 0;
+        margin-top: -17%;
+      }
+    }
+
+    /* For screens between 768px and 992px */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      #dsc {
+        margin-left: 15%;
+        margin-top: 20%;
+      }
+
+      #gh {
+        margin-left: 50%;
+        margin-top: -17%;
+      }
+    }
+
+    /* For screens between 992px and 1200px */
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      #dsc {
+        margin-left: 15%;
+        margin-top: 20%;
+      }
+
+      #gh {
+        margin-left: 70%;
+        margin-top: -17%;
+      }
+    }
+
+    /* For screens larger than 1200px */
+    @media (min-width: 1200px) {
+      #dsc {
+        margin-left: 15%;
+        margin-top: 20%;
+      }
+
+      #gh {
+        margin-left: 70%;
+        margin-top: -17%;
+      }
+    }
+
+    #join {
+      margin-right: 10px;
+      animation: jello;
+      animation-duration: 5s;
+      font-family: "Alkatra", cursive;
+    }
+
+    #join:hover {
+      animation: pulse;
+      animation-duration: 2s;
+    }
+
+    /* center and scale the background image on ultrawide monitors */
+    @media screen and (min-aspect-ratio: 21/9) {
+      body {
+        background-position: center center;
+        background-size: 100% auto;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-box"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"
+              />
+            </svg>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                  id="home-button"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Me</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="projects1.html"
+                      >Guido's World</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">N/A</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">N/A</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span id="join">
+          <a
+            href="https://discord.gg/QPBdWsU5DK"
+            class="btn btn-dark"
+            target="_blank"
+            >Server</a
+          >
+        </span>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1 class="h1 text-light" id="contact">Contacts</h1>
+      </div>
+
+      <div class="card" id="dsc" style="width: 18rem">
+        <img
+          src="images/discord-loader.gif"
+          class="card-img-top"
+          alt="discord"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Discord</h5>
+          <p class="card-text">guido.#3960</p>
+          <span class="badge text-bg-dark">User ID: 810766327370874880</span>
+        </div>
+      </div>
+      <!------------------->
+      <!--GITHUB-->
+      <div class="card" style="width: 18rem" id="gh">
+        <img src="images/TEST.png" class="card-img-top" alt="github" />
+        <div class="card-body">
+          <h5 class="card-title">GitHub</h5>
+          <p class="card-text">Wagon706</p>
+          <a
+            href="https://github.com/Wagon706"
+            class="btn btn-dark"
+            target="_blank"
+            >Profile Link</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
